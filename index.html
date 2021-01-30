@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<link rel="apple-touch-icon" sizes="57x57" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://portalmouralacerda.com.br/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="https://portalmouralacerda.com.br/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://portalmouralacerda.com.br/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="https://portalmouralacerda.com.br/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://portalmouralacerda.com.br/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+	
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moura Lacerda</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js
+	"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).ready(function () {
+    $("#form").validate({
+        rules: {
+        "data":{
+        		required:true
+        	},
+        	"curso":{
+        		required:true
+        	},
+        	"nome": {
+                required: true,
+                minlength: 5
+            },
+            "email": {
+                required: true,
+                email: true
+            },
+             "telefone": {
+                required: true,
+                minlength: 6,
+
+            }
+        },
+        messages: {
+            "data":{
+        		required: "Escolha uma data"
+        	},
+        	"curso":{
+        		required: "Selecione um curso"
+        	},
+            "nome": {
+                required: "Coloque seu nome"
+            },
+            "telefone": {
+                required: "Coloque seu telefone"
+            },
+            "email": {
+                required: "Coloque seu Email",
+                email: "Email invalido"
+            }
+        }debug: true,
+        submitHandler: function (form) { // for demo
+$('#testes').hide();
+$('#form').submit();
+
+        }
+    });
+});
+});
+</script>
+
+<style>
+	::-webkit-input-placeholder,:-ms-input-placeholder,::placeholder { /* Edge */color: #20599b;}
+
+	body {font-family: 'Montserrat', sans-serif;background-image: url('bg-landingpage.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;color:#fff;}
+
+	.content{margin: 0 auto;width: 80%; margin-top: 5%; margin-bottom: 5%; text-align: center;font-style: italic;}
+
+	section#header {display: inline-block;margin-bottom: 100px;}
+
+	select {height: 40px;border-radius: 30px;border: none;color: #97181d; text-transform: uppercase; padding-left: 15px;font-weight: bold;width: 60%;}
+
+	.select-dots {width: 48%;text-align: left;display: inline-block;vertical-align: top;}
+
+    input{height: 55px;border-radius: 5px;border: none;text-transform: uppercase;width: 26%;padding: 0 10px;font-size: 24px;}
+
+	input:nth-child(3){margin: 0 50px;}
+
+	input[type="text"]::placeholder {color: #20599b;font-weight: 900;font-style: italic;}
+
+	input[type="text"] {background-image: url(bg-input-text.png);background-size: cover;background-repeat: no-repeat;background-position: center;}
+
+    input[type="date"]{height: 40px;border-radius: 30px;border: none;color: #97181d; text-transform: uppercase; padding-left: 15px;font-weight: bold;}
+
+	input[type="radio"] {width: 4%;height: 20px;}
+
+	label {line-height: 1.5;vertical-align: bottom;}
+
+    input[type="checkbox"] {width: 4%; height: 20px;}
+
+    input[type="submit"] {width: 60%;font-weight: 900;background-image: url(bg-btn-enviar.png);background-size: cover;background-repeat: no-repeat;background-position: center;color: #20599b;font-style: italic;}
+
+    .rg{width: 45%; float: left;}
+
+    .uf{width: 25%; float: left;margin-left: 10px;}
+
+    .cidade{width: 70%; float: left;}
+
+    .orgaoest{width: 50%; float: left;margin-left: 10px;}
+
+    @media screen and (max-width: 1024px) {
+
+		section#header {margin-bottom: 0;}
+
+		#header div,#header div:first-child > img {width: 100% !important;}
+
+		#header div:last-child {text-align: center !important;}
+
+		body{background-image: url('bg-landingpage-responsivo.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;}
+
+		.content{margin: 0 auto;width: 95%;  margin-top: 10%; text-align: center;}
+		
+		select {width: 90%;}
+
+		input{width: 90%;margin: 10px 0 !important;}
+
+		input[type="submit"] {width: 100%;font-size: 16px;}
+
+		.rg{width: 90%;float: none;}
+
+		.uf{width: 90%;margin-left: 0px;    float: none;}
+
+		.cidade{width: 90%;    float: none;}
+
+		.orgaoest{width: 90%;margin-left: 0px;    float: none;}
+	}
+
+</style>
+</head>
+
+<body>
+	<form version="2.0" id="form2" name="form2" accept-charset="UTF-8" method="POST" enctype="multipart/form-data" action="salvar_2.php">
+		<div class="content">
+			<section id="header">
+				<div style="text-align: left;float: left;width: 77%;">
+					<img src="logo-landingpage.png" alt="Logos" style="width: 70%;">
+				</div>
+	
+				<div style="width: 23%;text-align: left;float: left;">
+					<p style="font-size: 24px;">
+						<span>Tá com dúvidas?</span><br>
+						<span>Vem de</span> <span style="color: #00ff84;">#zap</span><br>
+						<span style="font-weight: 700;"><img src="icon-whatsapp.png" alt="Icon-Whatsapp" style=""> 16 99156 4267</span> <span style="font-size: 15px;">ou</span><br>
+						<span style="font-weight: 700;"><img src="icon-phone.png" alt="Icon-Phone" style=""> 16 2101 1096</span>
+					</p>
+				</div>
+			</section>
+			
+				<input type="text" name="nome" placeholder="Nome" required/>
+				<input type="text" name="email" placeholder="E-mail" required/>
+				<input type="text" name="telefone" placeholder="Telefone" required/>
+
+			<p style="margin-top: 85px;font-size: 35px;font-weight: 900;">ESCOLHA SEU CURSO</p>
+
+			<div class="select-dots">
+				<input type="radio" id="mba-gestao-estrategica-pessoas" name="curso" value="mba-gestao-estrategica-pessoas">
+				<label for="mba-gestao-estrategica-pessoas"><span style="font-weight: 700;">MBA</span> EM GESTÃO ESTRATÉGICA DE PESSOAS</label><br><br>
+				<input type="radio" id="mba-controladoria-financas" name="curso" value="mba-controladoria-financas">
+				<label for="mba-controladoria-financas"><span style="font-weight: 700;">MBA</span> EM CONTROLADORIA E FINANÇAS</label><br><br>
+				<input type="radio" id="mba-gestao-logistica-supply-chain" name="curso" value="mba-gestao-logistica-supply-chain">
+				<label for="mba-gestao-logistica-supply-chain"><span style="font-weight: 700;">MBA</span> EM GESTÃO DA LOGÍSTICA E SUPPLY CHAIN</label><br><br>
+				<input type="radio" id="musculacao-personal-training" name="curso" value="musculacao-personal-training">
+				<label for="musculacao-personal-training"><span style="font-weight: 700;">MUSCULAÇÃO</span> E PERSONAL TRAINING</label>
+			</div>
+			  
+			<div class="select-dots">
+				<input type="radio" id="engenharia-estrutura" name="curso" value="engenharia-estrutura">
+				<label for="engenharia-estrutura"><span style="font-weight: 700;">ENGENHARIA DE ESTRUTURAS</span> - CONCRETO ARMADO, FUNDAÇÕES E ESTRUTURAS METÁLICAS</label><br><br>
+				<input type="radio" id="gestao-edificacoes" name="curso" value="gestao-edificacoes">
+				<label for="gestao-edificacoes"><span style="font-weight: 700;">GESTÃO DE EDIFICAÇÕES</span> E NOVAS TECNOLOGIAS DA CONSTRUÇÃO</label><br><br>
+				<input type="radio" id="engenharia-seguranca-trabalho" name="curso" value="engenharia-seguranca-trabalho">
+				<label for="engenharia-seguranca-trabalho"><span style="font-weight: 700;">ENGENHARIA</span> DE SEGURANÇA DO TRABALHO</label>
+			</div>
+			
+			<div style="margin-top: 100px;">
+				<input type="submit" value="RECEBER CONTATO DA NOSSA EQUIPE" original-value="RECEBER CONTATO DA NOSSA EQUIPE"/>
+			</div>	
+		</div>
+	</form>
+</body>
+</html>
